@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLTSDataSet" targetNamespace="http://tempuri.org/QLTSDataSet.xsd" xmlns:mstns="http://tempuri.org/QLTSDataSet.xsd" xmlns="http://tempuri.org/QLTSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLTSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLTSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TrangChu.Properties.Settings.GlobalReference.Default.QLTSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_TongLuongNVTableAdapter" GeneratorDataComponentClassName="view_TongLuongNVTableAdapter" Name="view_TongLuongNV" UserDataComponentName="view_TongLuongNVTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLTSConnectionString (Settings)" DbObjectName="QLTS.dbo.view_TongLuongNV" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TongLuong FROM dbo.view_TongLuongNV</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TongLuong" DataSetColumn="TongLuong" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLTSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="QLTSDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLTSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_TongLuongNV" msprop:Generator_RowClassName="view_TongLuongNVRow" msprop:Generator_RowEvHandlerName="view_TongLuongNVRowChangeEventHandler" msprop:Generator_RowDeletedName="view_TongLuongNVRowDeleted" msprop:Generator_RowDeletingName="view_TongLuongNVRowDeleting" msprop:Generator_RowEvArgName="view_TongLuongNVRowChangeEvent" msprop:Generator_TablePropName="view_TongLuongNV" msprop:Generator_RowChangedName="view_TongLuongNVRowChanged" msprop:Generator_UserTableName="view_TongLuongNV" msprop:Generator_RowChangingName="view_TongLuongNVRowChanging" msprop:Generator_TableClassName="view_TongLuongNVDataTable" msprop:Generator_TableVarName="tableview_TongLuongNV">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TongLuong" msprop:Generator_UserColumnName="TongLuong" msprop:Generator_ColumnPropNameInTable="TongLuongColumn" msprop:Generator_ColumnPropNameInRow="TongLuong" msprop:Generator_ColumnVarNameInTable="columnTongLuong" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
